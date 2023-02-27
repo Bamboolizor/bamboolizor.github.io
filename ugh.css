@@ -1,0 +1,83 @@
+html {
+    width: auto;
+    overflow-x: hidden;
+    background-color: rgb(50, 50, 50);
+}
+
+#wrapper{
+	text-align: center;
+}
+
+#header{
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	padding-top: 15vh;
+	padding-left: 10vw;
+	text-shadow: 0 5px 5px black;
+}
+
+#info{
+	text-align: left;
+	color: rgb(255, 255, 255);
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	display: block;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	animation: 2s ease 0s 1 fadeIn;
+}
+
+
+#content{
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+}
+
+.greet{
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+	animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.namedrop{
+	color: rgb(37, 193, 88);
+	font-size: 60px;
+	animation: 1s ease 0s 1 slideInLeft;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(15%);
+		opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+		opacity: 1;
+    }
+}
+
+@media screen and (max-width: 600px){
+	.greet{
+		font-size: 20px;
+	}
+	
+	.namedrop{
+		font-size: 40px;
+	}
+	
+	p{
+		font-size: 18px;
+	}
+}
+
